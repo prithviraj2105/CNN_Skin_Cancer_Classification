@@ -1,5 +1,5 @@
 # CNN Assignment
-> CNN model to classify types of skin cancer based on skin images.
+> Build CNN model to classify types of skin cancer based on skin images.
 
 
 ## Table of Contents
@@ -11,7 +11,7 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- This project is part of course study assignment. The course is Advanced Certification Program in Machine Learning and Deep Learning (ACP in ML & DL) conducted by IIIT Banglore. The project is building a Ridge and Lasso Regression model for predicting House Price.
+- This project is part of course study assignment. The course is Advanced Certification Program in Machine Learning and Deep Learning (ACP in ML & DL) conducted by IIIT Banglore. The project is building CNN model to classify types of skin cancer based on skin images.
 - A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. The management aspires to understand how exactly the prices vary with the housing features. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns.
 
 The company wants to know:
@@ -74,4 +74,4 @@ Created by [@prithviraj2105] - feel free to contact me!
 <!-- ## License -->
 <!-- This project is open source and available under the [... License](). -->
 
-<!-- You don't have to include all sections - just the one's relevant to your project --># CNN_Skin_Cancer_Classification
+<!-- You don't have to include all sections - just the one's relevant to your project -->
