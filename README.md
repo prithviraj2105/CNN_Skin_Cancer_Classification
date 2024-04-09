@@ -37,8 +37,6 @@ The steps followed were:
 
 ## Conclusions
 
-#### Train data
-
 Class imbalance handling and adding dropout layers greatly improved model performance.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
@@ -57,7 +55,7 @@ Class imbalance handling and adding dropout layers greatly improved model perfor
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
-Give credit here.
+<!-- Give credit here. -->
 - This project is done with reference to a example (CIFAR-10 Classification with Python) covered in the Advanced Regression module.
 
 
