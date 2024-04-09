@@ -12,7 +12,7 @@
 
 ## General Information
 - This project is part of course study assignment. The course is Advanced Certification Program in Machine Learning and Deep Learning (ACP in ML & DL) conducted by IIIT Banglore.
-- The project is build a multi-class classification model using a custom convolutional neural network in TensorFlow.
+- The project is to build a multi-class classification model using a custom convolutional neural network in TensorFlow.
 - To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
 - The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
@@ -28,14 +28,10 @@ The data set contains the following diseases:
 - Vascular lesion
 
 The steps followed were:
-- Created train & validation dataset from the train directory with a batch size of 32. Resize images to 180*180.
-- Created first CNN model and trained the model for ~20 epochs.
-- Observed that the model is Overfitting
-- Tried image augmentation strategy to increase variability and also added dropout layers.
-- The model accuracies for both train and validation dataset were low indicating underfitting.
-- Checked for Class imbalance. Observed class imbalance and low number of samples for some classes compared to others.
-- Augmented dataset with new 500 images for each class.
-- Observed the handling class imbalance increased accuracies and reduced overfitting.
+- Created train & validation dataset from the train directory with a batch size of 32. Resized images to 180*180.
+- Created first CNN model and trained the model for ~20 epochs. Observed that the model is Overfitting.
+- Tried Image augmentation strategy to increase variability and also added dropout layers. Observed that model accuracies for both train and validation dataset were low indicating underfitting.
+- Checked for Class imbalance. Observed class imbalance and low number of samples for some classes compared to others. Augmented dataset with new 500 images for each class. Trained final model for ~30 epochs for extended learning. Observed increased accuracies and reduced overfitting.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
