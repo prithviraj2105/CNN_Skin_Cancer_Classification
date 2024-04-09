@@ -11,43 +11,40 @@
 <!-- You can include any other section that is pertinent to your problem -->
 
 ## General Information
-- This project is part of course study assignment. The course is Advanced Certification Program in Machine Learning and Deep Learning (ACP in ML & DL) conducted by IIIT Banglore. The project is building CNN model to classify types of skin cancer based on skin images.
-- A US-based housing company named Surprise Housing has decided to enter the Australian market. The company uses data analytics to purchase houses at a price below their actual values and flip them on at a higher price. The management aspires to understand how exactly the prices vary with the housing features. They can accordingly manipulate the strategy of the firm and concentrate on areas that will yield high returns.
+- This project is part of course study assignment. The course is Advanced Certification Program in Machine Learning and Deep Learning (ACP in ML & DL) conducted by IIIT Banglore.
+- The project is build a multi-class classification model using a custom convolutional neural network in TensorFlow.
+- To build a CNN based model which can accurately detect melanoma. Melanoma is a type of cancer that can be deadly if not detected early. It accounts for 75% of skin cancer deaths. A solution that can evaluate images and alert dermatologists about the presence of melanoma has the potential to reduce a lot of manual effort needed in diagnosis.
+- The dataset consists of 2357 images of malignant and benign oncological diseases, which were formed from the International Skin Imaging Collaboration (ISIC). All images were sorted according to the classification taken with ISIC, and all subsets were divided into the same number of images, with the exception of melanomas and moles, whose images are slightly dominant.
 
-The company wants to know:
-- Which variables are significant in predicting the price of a house, and
-- How well those variables describe the price of a house.
+The data set contains the following diseases:
+- Actinic keratosis
+- Basal cell carcinoma
+- Dermatofibroma
+- Melanoma
+- Nevus
+- Pigmented benign keratosis
+- Seborrheic keratosis
+- Squamous cell carcinoma
+- Vascular lesion
 
-The company has collected a data set from the sale of houses in Australia.
-
-The requirement is to build a regression model using regularisation in order to predict the actual value of the prospective properties and decide whether to invest in them or not.
+The steps followed were:
+- Created train & validation dataset from the train directory with a batch size of 32. Resize images to 180*180.
+- Created first CNN model and trained the model for ~20 epochs.
+- Observed that the model is Overfitting
+- Tried image augmentation strategy to increase variability and also added dropout layers.
+- The model accuracies for both train and validation dataset were low indicating underfitting.
+- Checked for Class imbalance. Observed class imbalance and low number of samples for some classes compared to others.
+- Augmented dataset with new 500 images for each class.
+- Observed the handling class imbalance increased accuracies and reduced overfitting.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
 
-We have chosen Lasso Regression model with optimal alpha=0.001 as final model because as per analysis this is the most robust and generalisable model.
-This model has far less number of features which translates to reduction in complexity. The model is simpler and thus interpretable.
-The difference between R^2 of Train and Test data is comparatively less in this model. The metrics data shows that though the model's accuracy is slightly low on training data it is more generalisable and performs better on unseen data.
 #### Train data
 
-r2 score = 0.8748348448916363 rss = 3.989855681947641 mse = 0.004447999645426579 rmse = 0.06669332534389463
+Class imbalance handling and adding dropout layers greatly improved model performance.
 
-#### Test data
-r2 score = 0.7658494795148396 rss = 3.239954389683936 mse = 0.008415465947231002 rmse = 0.09173584875734787
-
-Based on the final model we can say that the model describes 87% of the variability in price of house and also has decent predictive power with 0.77 r2 score on test data.
-
-The top 5 features which are most significant in determining the House price are;
-- ‘OverallQual’ (Rating of the overall material and finish of the house) has positive correlation with Sale Price.
-- ‘GrLivArean’ (living area above grade (ground) in square feet) has positive correlation with Sale Price.
-- ‘TotalBsmtSF’ (Basement area in square feet) has positive correlation with Sale Price.
-- ‘GarageArea’ (Size of garage in square feet) has positive correlation with Sale Price.
-- ‘TotRmsAbvGrd’ (Total rooms above grade (does not include bathrooms)) has positive correlation with Sale Price.
-
-The analysis has shown that the most obvious factors have contributed to the sale price of the house. We can see that the quality of the material and finish of the house has highest impact on the sale price, price increases as the rating of the quality increases. The other significant factors affecting the price are the size of living area above ground, basement area, garage area and number of rooms above ground.
-
-The housing company should consider concentrating on houses with high quality material and finish.
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 
@@ -58,12 +55,14 @@ The housing company should consider concentrating on houses with high quality ma
 - pandas - version 2.0.3
 - seaborn - version 0.12.2
 - matplotlib - version 3.7.2
+- Keras - version 3.1.1 
+- Tensorflow - version 2.16.1
 
 <!-- As the libraries versions keep on changing, it is recommended to mention the version of library used in this project -->
 
 ## Acknowledgements
 Give credit here.
-- This project is done with reference to a example 'Predict the sales given the spend on marketing' covered in the Advanced Regression module.
+- This project is done with reference to a example (CIFAR-10 Classification with Python) covered in the Advanced Regression module.
 
 
 ## Contact
