@@ -30,14 +30,14 @@ The data set contains the following diseases:
 The steps followed were:
 - Created train & validation dataset from the train directory with a batch size of 32. Resized images to 180*180.
 - Created first CNN model and trained the model for ~20 epochs. Observed that the model is Overfitting.
-- Tried Image augmentation strategy to increase variability and also added dropout layers. Observed that model accuracies for both train and validation dataset were low indicating underfitting.
-- Checked for Class imbalance. Observed class imbalance and low number of samples for some classes compared to others. Augmented dataset with new 500 images for each class. Trained final model for ~30 epochs for extended learning. Observed increased accuracies and reduced overfitting.
+- Tried Image augmentation strategy to increase variability and also added dropout layers to prevent overfitting. Observed that model accuracies for both train and validation dataset were low indicating underfitting.
+- Checked for Class imbalance. Observed class imbalance and low number of samples for some classes compared to others. Augmented dataset with new 500 images for each class. Trained final model for ~30 epochs, giving the model more time to learn to prevent underfitting. Observed increased accuracies and no underfitting.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
 ## Conclusions
 
-Class imbalance handling and adding dropout layers greatly improved model performance.
+Data augmentation, class imbalance handling and adding dropout layers greatly improved model performance.
 
 <!-- You don't have to answer all the questions - just the ones relevant to your project. -->
 
